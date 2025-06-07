@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.left-menu, .right-content {
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+.main-content {
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+  .left-menu, .main-content, .right-content {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+</style>
+</head>
+<body>
+    
+    <!--Our first div-->
+
+    <div class="left-menu">
+        <p style="background-color: blue;">Left Menu</p>
+
+    </div>
+
+    <!--second div-->
+    <div class="main-content">
+        <p style="background-color: white;">Main content</p>
+
+    </div>
+
+    <!--third div-->
+    <div class="right-content">
+        <p style="background-color: green;">right content</p>
+
+    </div>
+</body>
+</html>
